@@ -8,7 +8,7 @@ from gradient_free import (
 
 
 def postprocess(x: np.ndarray):
-    return int(x > 0)
+    return np.argmax(x)
 
 
 model = Model()

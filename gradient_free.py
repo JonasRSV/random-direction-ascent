@@ -134,9 +134,9 @@ class Model:
               env: gym.Env,
               iterations: int,
               samples_per_update: int,
-              stop_at: float,
               show_after: bool,
-              postprocess: Callable[[np.ndarray], np.ndarray]):
+              postprocess: Callable[[np.ndarray], np.ndarray],
+              stop_at=1e15):
         timestamp = time.time()
 
         spinner = halo.Halo(text="Initialising full train", spinner="dots")
