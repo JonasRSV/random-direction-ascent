@@ -11,14 +11,14 @@ Demo of blackbox & gradient-free optimisation of NN
 ## Installation
 ---
 
+See https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md for installation of SWIG
+
 
 ```bash
 $ git clone https://github.com/JonasRSV/random-direction-ascent.git
 $ cd random-direction-ascent
 $ pip3 install -r requirements.txt
 ``` 
-
-pyglet & pybox2d might need some additional requirements (see eventual error messages)
 
 
 ## Run any of the environments 

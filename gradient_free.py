@@ -134,6 +134,7 @@ class Model:
               env: gym.Env,
               iterations: int,
               samples_per_update: int,
+              stop_at: float,
               show_after: bool,
               postprocess: Callable[[np.ndarray], np.ndarray]):
         timestamp = time.time()
@@ -158,6 +159,10 @@ class Model:
             if fitness > best:
                 best = fitness
                 self.update()
+
+                if best >= stop_at:
+                    break
+
             else:
                 self.reset()
                 self.explore()
