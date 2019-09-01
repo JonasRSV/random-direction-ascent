@@ -5,7 +5,7 @@
 
 ---
 
-Demo of blackbox gradient free optimisation of NN 
+Demo of blackbox & gradient-free optimisation of NN 
 
 
 ## Installation
