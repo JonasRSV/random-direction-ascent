@@ -1,0 +1,5 @@
+gym
+numpy
+halo
+pyglet
+pybox2d
