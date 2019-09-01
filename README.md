@@ -29,9 +29,9 @@ $ python3 (mountaincar.py | lunar-lander.py | pendelum.py | cartpole.py)
 ```
 
 
-|environment   | score  | iteration  | score to win environment  |
-|---|---|---|---|
-| mountain car   |   |   |   |
-| lunar lander   |   |   |   |
-| pendelum   |   |   |   |
-| cartpole  |   |   |   |
+|environment   | score  | iteration  | score to win environment  | time |
+|---|---|---|---|---|
+| mountain car   | -94  | 95  | > -200 | 0.7 seconds |
+| lunar lander   | 237  | 126  | > 200  | 50 seconds |
+| pendelum   | -2.8  | 507  | undefined (random startegy ~1000) | 12 seconds |
+| cartpole  |  224  | 17  | 200 | 0.17 seconds |
