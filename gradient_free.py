@@ -170,7 +170,7 @@ class Model:
 
             fitnesses.append(fitness)
 
-        spinner.succeed(f"time: {time.time() - timestamp} seconds -- Final fitness {fitness}")
+        spinner.succeed(f"time: {time.time() - timestamp} seconds -- Final fitness {fitness} -- iterations {i}")
 
         self.reset()
 
