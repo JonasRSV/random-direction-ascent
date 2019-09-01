@@ -22,4 +22,5 @@ model.train(blackbox=play,
             iterations=50,
             samples_per_update=20,
             postprocess=postprocess,
-            show_after=True)
+            show_after=True,
+            stop_at=200)

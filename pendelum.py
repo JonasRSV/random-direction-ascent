@@ -13,9 +13,7 @@ def postprocess(x: np.ndarray):
 
 model = Model()
 
-model.add(Layer(64, np.tanh))
-model.add(Layer(64, np.tanh))
-model.add(Layer(64, np.tanh))
+model.add(Layer(512, np.tanh))
 
 env = gym.make("Pendulum-v0")
 
@@ -25,4 +23,5 @@ model.train(blackbox=play,
             iterations=600,
             samples_per_update=2,
             postprocess=postprocess,
-            show_after=True)
+            show_after=True,
+	    stop_at=-200)
